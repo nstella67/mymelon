@@ -19,4 +19,13 @@ FROM mediagroup
 ORDER BY mediagroupno DESC
 ;
 
+--삭제
+DELETE FROM mediagroup
+WHERE mediagroupno=?
+;
+
+--수정
+UPDATE mediagroup
+SET title=?
+;
 
