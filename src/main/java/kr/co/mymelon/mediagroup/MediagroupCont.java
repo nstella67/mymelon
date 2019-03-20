@@ -36,13 +36,13 @@ public class MediagroupCont {
 		if(cnt==0) {
 			mav.addObject("msg1", "<p>미디어 그룹 등록 실패</p>");
 			mav.addObject("img", "<img src='../images/fail.png'>"); 
-			mav.addObject("link1", "<input tupe='button' value='다시시도' onclick='javscript:history.back()'>");
-			mav.addObject("link2", "<input tupe='button' value='그룹목록' onclick='location.href=\"./list.do\"'>");
+			mav.addObject("link1", "<input type='button' value='다시시도' onclick='javscript:history.back()'>");
+			mav.addObject("link2", "<input type='button' value='그룹목록' onclick='location.href=\"./list.do\"'>");
 		}else {
 			mav.addObject("msg1", "<p>미디어 그룹 등록 성공</p>");
 			mav.addObject("img", "<img src='../images/sound.png'>");
-			mav.addObject("link1", "<input tupe='button' value='계속등록' onclick='location.href=\"./create.do\"'>");
-			mav.addObject("link2", "<input tupe='button' value='그룹목록' onclick='location.href=\"./list.do\"'>");
+			mav.addObject("link1", "<input type='button' value='계속등록' onclick='location.href=\"./create.do\"'>");
+			mav.addObject("link2", "<input type='button' value='그룹목록' onclick='location.href=\"./list.do\"'>");
 		}//if end
 		return mav;
 	}//createProc() end
@@ -73,13 +73,13 @@ public class MediagroupCont {
 		if(cnt==0) {
 			mav.addObject("msg1", "<p>미디어 그룹 삭제 실패</p>");
 			mav.addObject("img", "<img src='../images/fail.png'>"); 
-			mav.addObject("link1", "<input tupe='button' value='다시시도' onclick='javscript:history.back()'>");
-			mav.addObject("link2", "<input tupe='button' value='그룹목록' onclick='location.href=\"./list.do\"'>");
+			mav.addObject("link1", "<input type='button' value='다시시도' onclick='javscript:history.back()'>");
+			mav.addObject("link2", "<input type='button' value='그룹목록' onclick='location.href=\"./list.do\"'>");
 		}else {
 			mav.addObject("msg1", "<p>미디어 그룹 삭제 성공</p>");
 			mav.addObject("img", "<img src='../images/sound.png'>");
-			mav.addObject("link1", "<input tupe='button' value='계속삭제' onclick='location.href=\"./delete.do\"'>");
-			mav.addObject("link2", "<input tupe='button' value='그룹목록' onclick='location.href=\"./list.do\"'>");
+			mav.addObject("link1", "<input type='button' value='계속삭제' onclick='location.href=\"./delete.do\"'>");
+			mav.addObject("link2", "<input type='button' value='그룹목록' onclick='location.href=\"./list.do\"'>");
 		}//if end
 		return mav;
 	}//deleteForm() end
@@ -101,12 +101,12 @@ public class MediagroupCont {
 		if(cnt==0) {
 			mav.addObject("msg1", "<p>미디어 그룹 수정 실패</p>");
 			mav.addObject("img", "<img src='../images/fail.png'>"); 
-			mav.addObject("link1", "<input tupe='button' value='다시시도' onclick='javscript:history.back()'>");
-			mav.addObject("link2", "<input tupe='button' value='그룹목록' onclick='location.href=\"./list.do\"'>");
+			mav.addObject("link1", "<input type='button' value='다시시도' onclick='javscript:history.back()'>");
+			mav.addObject("link2", "<input type='button' value='그룹목록' onclick='location.href=\"./list.do\"'>");
 		}else {
 			mav.addObject("msg1", "<p>미디어 그룹 수정 성공</p>");
 			mav.addObject("img", "<img src='../images/sound.png'>");
-			mav.addObject("link2", "<input tupe='button' value='그룹목록' onclick='location.href=\"./list.do\"'>");
+			mav.addObject("link2", "<input type='button' value='그룹목록' onclick='location.href=\"./list.do\"'>");
 		}//if end
 		return mav;
 	}//deleteForm() end
