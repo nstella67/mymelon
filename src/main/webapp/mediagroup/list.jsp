@@ -27,7 +27,7 @@
 		<c:forEach var="dto" items="${list }">
 			<tr>
 				<td>${dto.mediagroupno }</td>
-				<td>${dto.title }</td>
+				<td><a href="../media/list.do?mediagroupno=${dto.mediagroupno }" >${dto.title }</a></td>
 				<td><input type="button" value="수정" onclick="location.href='./update.do?mediagroupno=${dto.mediagroupno}' ">
 					   <input type="button" value="삭제" onclick="location.href='./delete.do?mediagroupno=${dto.mediagroupno}' ">
 				</td>
