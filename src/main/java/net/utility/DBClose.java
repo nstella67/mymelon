@@ -8,10 +8,10 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class DBClose {
-	// 单捞磐海捞胶 楷搬 磊盔 馆吵
+	// 雿办澊韯半矤鞚挫姢 鞐瓣舶 鞛愳洂 氚橂偐
 
 	public DBClose() {
-		System.out.println("-----DBClose() 按眉 积己");
+		System.out.println("-----DBClose() 臧濎泊 靸濎劚");
 	}
 
 	public void close(Connection con) {

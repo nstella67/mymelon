@@ -5,22 +5,22 @@ import java.sql.DriverManager;
 
 import org.springframework.stereotype.Component;
 
-//½ºÇÁ¸µÄÁÅ×ÀÌ³Ê°¡ ÀÚµ¿À¸·Î °´Ã¼ »ı¼º
+//ìŠ¤í”„ë§ì»¨í…Œì´ë„ˆê°€ ìë™ìœ¼ë¡œ ê°ì²´ ìƒì„±
 @Component
-public class DBOpen { // µ¥ÀÌÅÍº£ÀÌ½º ¿¬°á
+public class DBOpen { // ë°ì´í„°ë² ì´ìŠ¤ ì—°ê²°
 
 	public DBOpen() {
-		System.out.println("-----DBOpen() °´Ã¼ »ı¼º");
+		System.out.println("-----DBOpen() ê°ì²´ ìƒì„±");
 	}
 
 	public Connection getConnection() {
-		// 1) Oracle DB Á¤º¸------------------------------
+		// 1) Oracle DB ì •ë³´------------------------------
 		String url = "jdbc:oracle:thin:@localhost:1521:xe";
 		String user = "java1113";
 		String password = "1234";
 		String driver = "oracle.jdbc.driver.OracleDriver";
 
-		// 2) MySQL DB Á¤º¸-------------------------------
+		// 2) MySQL DB ì •ë³´-------------------------------
 		/*
 		 * String url =
 		 * "jdbc:mysql://localhost:3306/soldesk?useUnicode=true&characterEncoding=utf8";
@@ -36,7 +36,7 @@ public class DBOpen { // µ¥ÀÌÅÍº£ÀÌ½º ¿¬°á
 			con = DriverManager.getConnection(url, user, password);
 
 		} catch (Exception e) {
-			System.out.println("DB¿¬°á ½ÇÆĞ : " + e);
+			System.out.println("DBì—°ê²° ì‹¤íŒ¨ : " + e);
 		} // try end
 
 		return con;
